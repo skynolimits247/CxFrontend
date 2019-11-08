@@ -1,0 +1,29 @@
+{
+  "originalOrderNumber": "14",
+  "frontOfficeOrderNumber": "26",
+  "customerId": "1",
+  "orderType": "EXPRESS",
+  "sourceChannelCode": "FRONTOFFICE",
+  "distributionCenterCode": "GER",
+  "customerRequestedDate": "2019-09-25",
+  "shippingAddress": {
+    "addressType": "BILLING",
+    "houseNo": "172",
+    "street": "12",
+    "city": "Munich",
+    "zipCode": "312121",
+    "state": "Munich",
+    "country": "Germany"
+  },
+  "billingAddress": {
+    "addressType": "BILLING",
+    "houseNo": "172",
+    "street": "12",
+    "city": "Munich",
+    "zipCode": "312121",
+    "state": "Munich",
+    "country": "Germany"
+  },
+  "orderPriorityCode": "MEDIUM",
+  "salesOrderLineItems": []
+}

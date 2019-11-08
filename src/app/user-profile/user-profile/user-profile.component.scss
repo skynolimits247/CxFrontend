@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  margin-top: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+label{
+  float: left;
+}
+
+input {
+  float: right;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+
+label{
+  background-color: gray;
+}
+.form-control{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

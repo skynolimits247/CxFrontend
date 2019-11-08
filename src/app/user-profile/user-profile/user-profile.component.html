@@ -1,0 +1,131 @@
+<div class="container">
+  <div class="flex-container">
+    <div class="card">
+
+      <h3>Billing Address</h3>
+            <form [formGroup]="billingAddress" (ngSubmit)="onSubmit(billingAddress.value)" novalidate>
+              <table>
+                <tr>
+                  <td>
+                    <label for="houseNo">House No</label>
+                  </td>
+                  <td>
+                    <input id="houseNo" type="text" class="form-control" name="houseNo" formControlName="houseNo" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="street">Street</label>
+                  </td>
+                  <td>
+                    <input id="street" type="text" class="form-control" name="street" formControlName="street" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="city">City</label>
+                  </td>
+                  <td>
+                    <input id="city" type="text" class="form-control" name="city" formControlName="city" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="zipCode">zipCode</label>
+                  </td>
+                  <td>
+                    <input id="zipCode" type="text" class="form-control" name="zipCode" formControlName="zipCode" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="state">State</label>
+                  </td>
+                  <td>
+                    <input id="state" type="text" class="form-control" name="state" formControlName="state" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="country">Country</label>
+                  </td>
+                  <td>
+                    <input id="country" type="text" class="form-control" name="country" formControlName="country" />
+                  </td>
+                </tr>
+              </table>
+
+              <div class="form-control">
+                <button type="submit" [disabled]="billingAddress.pristine || billingAddress.invalid">
+                  Submit
+                </button>
+              </div>
+            </form>
+    </div>
+
+<div class="card">
+
+  <h3>Shipping Address</h3>
+  <form [formGroup]="shippingAddress" (ngSubmit)="onSubmitShipping(shippingAddress.value)" novalidate>
+    <table>
+      <tr>
+        <td>
+          <label for="houseNo">House No</label>
+        </td>
+        <td>
+          <input id="houseNo" type="text" class="form-control" name="houseNo" formControlName="houseNo" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="street">Street</label>
+        </td>
+        <td>
+          <input id="street" type="text" class="form-control" name="street" formControlName="street" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="city">City</label>
+        </td>
+        <td>
+          <input id="city" type="text" class="form-control" name="city" formControlName="city" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="zipCode">zipCode</label>
+        </td>
+        <td>
+          <input id="zipCode" type="text" class="form-control" name="zipCode" formControlName="zipCode" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="state">State</label>
+        </td>
+        <td>
+          <input id="state" type="text" class="form-control" name="state" formControlName="state" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="country">Country</label>
+        </td>
+        <td>
+          <input id="country" type="text" class="form-control" name="country" formControlName="country" />
+        </td>
+      </tr>
+    </table>
+
+    <div class="form-control">
+      <button type="submit" [disabled]="billingAddress.pristine || billingAddress.invalid">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+  </div>
+</div>

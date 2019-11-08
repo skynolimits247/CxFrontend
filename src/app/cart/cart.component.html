@@ -1,0 +1,64 @@
+<div class="container">
+    <div *ngIf="UserCart.length > 0">
+      <table>
+        <tr>
+          <th>| Product Code |</th>
+          <th>| Quantity |</th>
+          <th>| Unit Price |</th>
+          <th>| Prices |</th>
+        </tr>
+        <tr *ngFor="let product of UserCart">
+          <td><strong>{{product.productCode| slice: -3 }}</strong></td>
+          <td>{{product.requiredQuantity}}</td>
+          <td>{{product.TotalPrice/product.requiredQuantity}}</td>
+          <td>{{product.TotalPrice}}</td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td>
+            SubTotal :
+          </td>
+          <td>
+            {{SubTotal| number : '1.2-2'}}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td>
+            <strong>
+              Tax Applicable :
+            </strong>
+          </td>
+          <td>
+            <strong>
+              {{TaxApplicable| number : '1.2-2'}}
+            </strong>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td>
+            <strong>
+              Total Billable Amount :
+            </strong>
+          </td>
+          <td>
+            <strong>
+              {{BillableAmount| number : '1.2-2'}}
+            </strong>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button class="checkout" (click)="checkout()">
+              checkout!<span class="glyphicon glyphicon-shopping-cart"></span>
+            </button>
+          </td>
+          <td colspan="2">
+            <button class="go-back">
+              <- Go Back </button> </td> </tr> </table>
+    </div>
+    <div *ngIf="UserCart.length ===0">
+        <h1>Your cart is empty....!!</h1>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+[{
+  "productCode": "000000000000000184",
+  "requiredQuantity": "0",
+  "transportationMode": "SHIP",
+  "distributionCenterCode": "SHIP"
+},
+{
+  "productCode": "000000000000000185",
+  "requiredQuantity": "0",
+  "transportationMode": "SHIP",
+  "distributionCenterCode": "SHIP"
+},
+{
+  "productCode": "000000000000000186",
+  "requiredQuantity": "0",
+  "transportationMode": "SHIP",
+  "distributionCenterCode": "SHIP"
+},
+{
+  "productCode": "000000000000000187",
+  "requiredQuantity": "0",
+  "transportationMode": "SHIP",
+  "distributionCenterCode": "SHIP"
+},
+{
+  "productCode": "000000000000000189",
+  "requiredQuantity": "0",
+  "transportationMode": "SHIP",
+  "distributionCenterCode": "SHIP"
+}]

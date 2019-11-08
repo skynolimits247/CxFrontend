@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="flex-container">
+    <div *ngFor="let product of products">
+      <div class="card">
+        <div class="container">
+          <h4>
+            <b>Product Code : {{ product.productCode | slice: -3 }}</b>
+          </h4>
+          <img src="{{ this.imageUrl }}" alt="{{ this.imageUrl }}" />
+          <p>Product Code : {{ product.productCode | slice: -3 }}</p>
+            <div *ngIf="product.requiredQuantity === '0' ">
+                        <button (click)="addCart(product)">
+                          Add to Cart
+                        </button>
+            </div>
+            <div *ngIf="product.requiredQuantity > 0 ">
+                <div class="qty">
+                  <button class="button1">-</button>
+                  <input type="text" name="Quantity" size="4" value={{product.requiredQuantity}} disabled />
+                  <button class="button1">+</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
